@@ -1,0 +1,39 @@
+*{
+  margin-top: 20px;
+  background-color: rgb(32, 30, 30);
+}
+.login-form-container {
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  padding-right: 40px;
+}
+
+h2 {
+  text-align: center;
+}
+
+input {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.submit{
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.submit:hover {
+  background-color: #0056b3;
+}
+
+h2{
+  color: aliceblue;
+}
