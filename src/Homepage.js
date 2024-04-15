@@ -6,20 +6,18 @@ const Homepage=()=>{
 
      return(
         <>
-        <div className='outer-nav'>
         <nav className='navbar'>
-            <a>Home</a>
-            <a>Smart</a>
-            <Link >Offers</Link>
-            <Link>Store</Link>
-            <Link className="home-btn" to={'/login'}>Login</Link>
+        <div id="navbar">
+            <a href="#" class="active">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+       </div>
+            <Link className="home-btn" to={'/login'}>Login</Link> 
             <div className='search-bar'></div>
         </nav>
-        </div>
-        <div className='image'><img src="watchgreen.jpg" alt="" width={"100%"} height={"300px"}/></div>
-        <div className='image'><img src="watchOffer.png" alt="" width={"100%"} height={"300px"}/></div>
-        <div className='image'><img src="cartWatch1.jpg" alt="" width={"30%"} height={"300px"}/></div>
-        <div className='image'><img src="watch1.jpeg" alt="" width={"30%"} height={"300px"}/></div>
+    
+        <div className='image'><img src="google-logo.png" alt="" width={"100%"} height={"300px"}/></div>
         <div className='line'></div>
 
 <div className='innerbox' width={"20px"} height={"20px"}>int</div>
@@ -29,7 +27,8 @@ const Homepage=()=>{
     <div className='phone'>
     <div className='phone-ab'>
         <div className='phoneinner'>
-            <img src=""></img>
+            <img src="google-logo.png" width={"100px"}  height={"30px"} className='google-down'></img>
+            <img src="app-store-logo.jpg" width={"260px"}  height={"300px"} className='app-down'></img>
         </div>
     </div>
     </div>
@@ -38,6 +37,7 @@ const Homepage=()=>{
             <div className='laptop-ab'></div>
         </div>
 </div>
+
 
         </>
      );
