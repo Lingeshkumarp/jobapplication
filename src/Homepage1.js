@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './Homepage.css';
 import { Link } from 'react-router-dom';
 
-const Homepage=()=>{
+const Homepage1=()=>{
 
      return(
         <>
@@ -43,4 +43,4 @@ const Homepage=()=>{
      );
 }
 
-export default Homepage;
+export default Homepage1;
