@@ -6,16 +6,13 @@ const Homepage1=()=>{
 
      return(
         <>
-        <nav className='navbar'>
-        <div id="navbar">
-            <a href="#" class="active">Home</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Contact</a>
-       </div>
-            <Link className="home-btn" to={'/login'}>Login</Link> 
-            <div className='search-bar'></div>
-        </nav>
+
+<div class="topnav">
+  <a class="active" href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+  <input type="text" placeholder="Search.."/>
+</div>
     
         <div className='image'><img src="google-logo.png" alt="" width={"100%"} height={"300px"}/></div>
         <div className='line'></div>
@@ -37,6 +34,7 @@ const Homepage1=()=>{
             <div className='laptop-ab'></div>
         </div>
 </div>
+
 
 
         </>

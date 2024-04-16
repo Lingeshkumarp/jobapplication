@@ -27,9 +27,10 @@ const Signup = () => {
 
   const handleSubmit = async(e) => {
     e.preventDefault()
-    const res = await axios.post('http://localhost:4000/signup',{fullname,email,password})
+    const res = await axios.post('https://jobapplication-q40r.onrender.com',{fullname,email,password})
      .then(result=>console.log(result))
      .catch(err=>{console.log(err)
+      console.log(res)
          nav('/login')
      })
   };
