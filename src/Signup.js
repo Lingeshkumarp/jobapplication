@@ -30,7 +30,6 @@ const Signup = () => {
     const res = await axios.post('https://jobapplication-q40r.onrender.com',{fullname,email,password})
      .then(result=>console.log(result))
      .catch(err=>{console.log(err)
-      console.log(res)
          nav('/login')
      })
   };
