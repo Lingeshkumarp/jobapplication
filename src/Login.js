@@ -26,7 +26,7 @@ const [password,setPassword] = useState("")
   const handleSubmit = async(e) => {
     e.preventDefault();
    
-    const res = await axios.post('https://jobapplication-q40r.onrender.com',{email,password})
+    const res = await axios.post('http://localhost:4000/login',{email,password})
     console.log(res)
     nav('/homepage')
   };
@@ -34,13 +34,14 @@ const [password,setPassword] = useState("")
   return (
     <div className="login-form-container">
       <h2>Login</h2>
-      <form onSubmit={handleSubmit}>
+      <form>
         <input
           type="email"
           name="email"
           placeholder="Email"
           value={email}
           onChange={handleEmail}
+          required
         />
         <input
           type="password"
@@ -48,6 +49,7 @@ const [password,setPassword] = useState("")
           placeholder="Password"
           value={password}
           onChange={handlePassword}
+          required
         />
         <div className='submit' to="/homepage"  onClick={handleSubmit}>Login</div>
       </form>
