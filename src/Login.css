@@ -1,6 +1,9 @@
 *{
-  margin-top: 20px;
   background-color: rgb(32, 30, 30);
+}
+
+.login-outer{
+  margin-top: 190px;
 }
 .login-form-container {
   width: 300px;

@@ -26,12 +26,13 @@ const [password,setPassword] = useState("")
   const handleSubmit = async(e) => {
     e.preventDefault();
    
-    const res = await axios.post('http://localhost:4000/login',{email,password})
+    const res = await axios.post('https://jobapplicationbackend.onrender.com/login',{email,password})
     console.log(res)
     nav('/homepage')
   };
 
   return (
+    <div className='login-outer'>
     <div className="login-form-container">
       <h2>Login</h2>
       <form>
@@ -53,6 +54,7 @@ const [password,setPassword] = useState("")
         />
         <div className='submit' to="/homepage"  onClick={handleSubmit}>Login</div>
       </form>
+    </div>
     </div>
   );
 };

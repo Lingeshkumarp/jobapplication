@@ -1,0 +1,258 @@
+.scroll{
+  overflow: auto;
+}
+
+.navbar {
+  top:0;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.navbar-logo {
+  font-size: 1.5rem;
+}
+
+.navbar-menu {
+  display: none;
+}
+
+.navbar-menu.open {
+  display: block;
+}
+
+.navbar-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.nav-item {
+  margin-right: 20px;
+}
+
+.nav-item a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar-toggle {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 1rem;
+}
+
+.nav-item a:hover{
+  color: aquamarine;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 3px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-container {
+    padding: 0 10px;
+  }
+
+  .navbar-menu {
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    z-index: 1;
+    display: none;
+  }
+
+  .navbar-menu.open {
+    display: flex;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+
+  .nav-item {
+    margin: 10px 0;
+  }
+}
+
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+    }
+  }
+
+.line{
+        border:1px solid white;
+    }
+    
+    .innerbox{
+        color: rgb(133, 33, 33);
+        background-color: azure;
+        border-radius: 10px ;
+        border: 5px solid rgb(255, 255, 255);
+    }
+    .innerbox:hover{
+      transform: translateY(53px);
+      box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+      box-shadow: 0px 6px 12px var(--Ev100, rgba(30, 10, 58, 0.04));
+    }
+    
+    .last{
+        color: aliceblue;
+    }
+
+.image:hover{
+  transform: translateY(-10px);
+  box-shadow: 0px 10px 20px 2px rgba(247, 246, 246, 0.884);
+  
+}
+
+.box{
+  box-shadow: 0px 6px 12px var(--Ev100, rgba(30, 10, 58, 0.04));
+}
+
+.name{
+  background: linear-gradient(45deg, #f10404, #ced7ce, #0606ef);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center; /* Center the text */
+  } 
+
+  footer{
+    color: white;
+    margin: 10px;
+  }
+
+  .Login-btn{
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background-color: #ffffff;
+    color: rgb(2, 1, 1);
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    
+    /* width: 100px;
+  height: 100px; */
+  background: rgb(235, 230, 230);
+  transition-timing-function: ease-in;
+  transition-timing-function: linear;
+  transition: width 2s;
+  }
+  .Login-btn:hover {
+    width: -300px;
+  }
+  @keyframes mymove {
+    from {left: 0px;}
+    to {left: 300px;}
+  }
+  
+  /* .name{
+    background: linear-gradient(45deg, #ff0000, #00ff00, #0000ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    }  */
+    
+   /* SearchIcon.css */
+
+   .outer3{
+    position: relative;
+    width: 300px;
+    height: 350px;
+    /* border: 2px solid black; DFF5FF E8F9FD*/
+    background-color: #DFF5FF;
+    border-radius: 15px;
+}
+.outer3:hover{
+/* transform: translateY(-10px);
+box-shadow: 0px 10px 20px 2px #5c5c61; */
+box-shadow: 0 8px 12px 0 rgba(9, 9, 12, 0.2)
+    
+}
+.inner3{
+    position: absolute;
+    top: 10%;
+    left: 15%;
+}
+.img-box{
+    width: 200px;
+    height: 150px;
+}
+.rating{
+    padding-left: 60px;
+    font-size: large;
+    padding-left: 30px;
+}
+.checked{
+    color: orange;
+    font-size: large;
+}
+.btn-reg{
+    width: 100px;
+    height: 30px;
+    font-family: serif;
+    font-weight: 500;
+    font-size: large;
+    color: black;
+    background-color: #5BBCFF;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-left: 40px;
+}
+.btn-reg:hover{
+    
+}
+.btn-reg:hover {background-color: #93a7b8}
+
+.btn-reg:active {
+  background-color: blue;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+p{
+    font-family: serif;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 3px;
+    cursor: pointer;
+}
